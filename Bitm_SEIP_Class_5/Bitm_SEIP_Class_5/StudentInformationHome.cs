@@ -65,7 +65,7 @@ namespace Bitm_SEIP_Class_5
             }
             int totalAdded = ids.Count();
 
-            informationRichTextBox.Text += ("Total Number of Customer: "+totalAdded +"\n" +see);
+            informationRichTextBox.Text += ("\nTotal Number of Customer: "+totalAdded +"\n" +see);
         }
         private void GPAInfo()
         {
@@ -100,6 +100,8 @@ namespace Bitm_SEIP_Class_5
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            
+            informationRichTextBox.Text = "Information";
             try
             {
                 if (ids.Contains(Convert.ToInt32(idTextBox.Text)) == true)
@@ -153,7 +155,13 @@ namespace Bitm_SEIP_Class_5
                 MessageBox.Show(exception.Message);
                 
             }
-            
+            idTextBox.Text = "";
+            nameTextBox.Text = "";
+            mobileTextBox.Text = "";
+            ageTextBox.Text = "";
+            addressTextBox.Text = "";
+            gpaTextBox.Text = "";
+
         }
 
         private void SearchInfo()
