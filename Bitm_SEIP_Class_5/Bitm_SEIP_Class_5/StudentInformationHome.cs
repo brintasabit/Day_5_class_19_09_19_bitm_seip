@@ -115,7 +115,7 @@ namespace Bitm_SEIP_Class_5
                 }
                 else if ((idTextBox.Text).Length > 4)
                 {
-                    MessageBox.Show("ID Must Be 4 Characters");
+                    MessageBox.Show("ID Must Be Not More Than 4 Characters");
                 }
                 else if ((nameTextBox.Text).Length > 30)
                 {
