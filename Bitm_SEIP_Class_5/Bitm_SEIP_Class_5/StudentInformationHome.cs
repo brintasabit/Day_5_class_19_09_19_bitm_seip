@@ -32,7 +32,7 @@ namespace Bitm_SEIP_Class_5
             addresses.Add(addressTextBox.Text);
             gpas.Add(gpa);
             string see = "";
-            for (int i = 0; i < ids.Count(); i++)
+            for (int i = ids.Count()-1; i < ids.Count(); i++)
             {
                 see += "\nID: " + ids[i] +"\n";
                 see += "Name: " + names[i] + "\n";
